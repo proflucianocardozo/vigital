@@ -1,0 +1,161 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 13/09/2022, 04:58:29
+    Author     : lucam
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+}
+
+/* Style the header */
+header {
+    background-image: url("imagem/header.jpg"),linear-gradient(to right,#000066,#000000);
+    background-repeat: no-repeat;
+    background-color: #000066;
+    /*background-color: #1d669c;*/
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    height: 200px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 18%;
+    height: 100%; /* only for demonstration, should be removed */
+    background: #000fe;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    /*float: left;*/
+    /*padding: 15px;*/
+    /*width: 82%;*/
+    background-color: #ffffff;
+    /*height: 100%;  only for demonstration, should be removed */
+}
+
+.myArticle {
+    float: right;
+    padding: 15px;
+}
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 80%;
+
+}
+
+/* Style the footer */
+footer {
+    background-color: #000066;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+.myLi {
+    font-family: Arial,sans-serif;
+    font-size: 10pt;
+}
+
+.myTr{
+    font-family: Arial,sans-serif;
+    font-size: 12pt;
+}
+
+.myDiv{
+    width: 22%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.myStatus{
+    width: 22%;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.form{
+    height: 100%;
+}
+.myDiv2{
+    width: 22%;
+/*    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;*/
+    width: 80px;
+    height: 130px;
+    float: right;
+}
+.myDiv3{
+    width: 22%;
+/*    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;*/
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+.myTable {
+    
+    padding-top: 20px;
+    border: 1px solid #113314;
+    padding: 15px;
+}
+.Mytd{
+    font-family: Arial,var;
+    font-size: 18pt;
+    font-weight:bolder;
+}
+.Mytdtxt{
+    font-family: Arial,var;
+    font-size: 12pt;
+    font-weight:normal;
+}
+
+.Mytdtitulo{
+    font-family: Arial,var;
+    font-size: 16pt;
+    font-weight:bold;
+}
+img.imagem {height: auto;}
+img {height: 320px;}
+
+.bloco1{float:left; width: 252px; height: 315px; background:#fff; margin-right:5px}
+
+.bloco2{float:right; width: 252px; height: 315px; background:#fff; margin-left:5px}
